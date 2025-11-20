@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="text-primary">Primary Text</h1>
+    <h1 class="text-secondary">Secondary Text</h1>
+    <h1 class="text-muted">Muted Text</h1>
+    <h1 class="text-success">Success Text</h1>
+    <h1 class="text-info">Info Text</h1>
+    <h1 class="text-warning">Warning Text</h1>
+    <h1 class="text-danger">Danger Text</h1>
+    <h1 class="text-white">White Text</h1>
+    <h1 class="text-light">Light Text</h1>
+    <h1 class="text-dark">Dark Text</h1>
+    
+    <hr>
+
+    <h1 class="bg-primary">Primary Background</h1>
+    <h1 class="bg-secondary">Secondary Background </h1>
+    <h1 class="bg-muted">Muted Background</h1>
+    <h1 class="bg-success">Success Background</h1>
+    <h1 class="bg-info">Info Background</h1>
+    <h1 class="bg-warning">Warning Background</h1>
+    <h1 class="bg-danger">Danger Background</h1>
+    <h1 class="bg-white">White Background</h1>
+    <h1 class="bg-light">Light Background</h1>
+    <h1 class="bg-dark text-white">Dark Background</h1>
+
+
+    <hr>
+
+    <h1>Spinner Border</h1>
+    <div class="spinner-border"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+
+     <hr>
+
+    <div class="spinner-grow"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-warning"></div>
+
+    <hr>
+
+    <h3>Alerte Box</h3>
+    <p class="alert alert-primary">This is a sample alert box</p>
+    <p class="alert alert-danger">This is danger alert box</p>
+    <p class="alert alert-success">This is  success alert box</p>
+
+    <hr>
+
+    <h3>Button</h3>
+    <button type="button" class="btn btn-primary">Confirm</button>
+    <button type="button" class="btn btn-danger disabled">Delete</button>
+
+    <hr>
+
+    <h3>Buttonn Outline</h3>
+    <button type="button" class="btn btn-outline-primary">Submit</button>
+    <button type="button" class="btn btn-outline-success">OK</button>
+
+    <hr>
+
+    <h3>Button Vs Link</h3>
+    <button type="buttonn" class="btn btn-link">Hello Link</button>
+    <a href="#" class="btn btn-primary">Link One</a>
+
+    <hr>
+
+    <h3>Button Size</h3>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-md">Default</button>
+    <button type="button" class="btn btn-success btn-sm">Small</button>
+
+    <hr>
+
+    <h3>Full Button Size</h3>
+     <div class="d-grid"> <!--full width-->
+        <button type="button" class="btn btn-success">Submit</button>
+    </div>
+
+    <hr>
+
+    <h3>Button Group</h3>
+    <div class="btn-group"> 
+        <button type="button" class="btn btn-success">One</button>
+        <button type="button" class="btn btn-success">Two</button>
+        <button type="button" class="btn btn-success">Three</button>
+    </div>
+
+
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-success">Stop</button>
+        <button type="button" class="btn btn-success">Look</button>
+        <button type="button" class="btn btn-success">Go</button>
+    </div>
+
+     <div class="btn-group-horizonal">
+        <button type="button" class="btn btn-success">Stop</button>
+        <button type="button" class="btn btn-success">Look</button>
+        <button type="button" class="btn btn-danger">Go</button>
+    </div>
+
+    <hr>
+
+    <h3>Badge</h3>
+    <button type="button" class="btn btn-primary">
+       Notification
+       <span class="badge bg-danger">5</span>
+    </button>
+
+    <button type="button" class="btn btn-primary">
+       Notification
+       <span class="badge bg-danger rounded-0">5</span>
+    </button>
+
+    <button type="button" class="btn btn-primary">
+       Notification
+       <span class="badge bg-danger rounded-pill">5</span>
+    </button>
+
+    <br><br>
+
+    <b>Add Card</b><sup class="badge bg-success">9</sup>
+    <b>Special Discount</b><sub class="badge bg-success">5%</sub>
+
+    <hr>
+
+    <h3>List Group</h3>
+    <ul class="list-group">
+        <li class="list-group-item">Red</li>
+        <li class="list-group-item">Green</li>
+        <li class="list-group-item">Blue</li>
+    </ul>
+
+    <br>
+    <ul class="list-group">
+        <li class="list-group-item">Red</li>
+        <li class="list-group-item active">Green</li>
+        <li class="list-group-item">Blue</li>
+    </ul>
+
+    <br>
+    <ul class="list-group">
+        <li class="list-group-item">Red</li>
+        <li class="list-group-item ">Green</li>
+        <li class="list-group-item disabled">Blue</li>
+    </ul>
+
+    <hr>
+
+    <h3>List Group Flush</h3>
+    <!-- remove borders and rounded corners from a list group -->
+     <div class="card" style="width: 18rem;">
+    <ol class="list-group list-group-flush">
+        <li class="list-group-item list-group-item-primary">Item1</li>
+        <li class="list-group-item ">Item2</li>
+        <li class="list-group-item ">Item3</li>
+    </ol>
+    </div>
+
+    <hr>
+
+    <h3>Progress</h3>
+    <div class="progress">
+        <div class="progress-bar bg-danger" style="width: 50%;"></div>
+    </div>
+</body>
+</html>

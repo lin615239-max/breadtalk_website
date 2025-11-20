@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 80%;
+    height: 70px;
+    margin: 100px 10% 0px 10%;
+    background-color: rgb(223, 215, 215);
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a, .shop a{
+    text-decoration: none;
+    color: black;
+}
+
+.shop a{
+    background-color: #6B3F2C;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 15px 15px;
+}
+
+/* Hero-section */
+.hero{
+    width: 80%;
+    height: 600px;
+    margin: 0 10% 0 10%;
+    background-image: url(image/Latte.jpg);
+    display: flex;
+    padding: 100px;
+
+}
+
+.hero-text h1{
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+ .hero-text p{
+    font-size: 1em;
+    margin-bottom: 25px;
+ }
+
+ .btn{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #6B3F2C;
+    padding: 12px 25px;
+    border-radius:10px 15px ;
+ }
+
+
+/* why chosse us  */
+.Why{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    flex: 1;
+    padding: 20px;
+    background: #e6d4d4;
+}
+
+.card image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p{
+    margin: 15px 0;
+}
+
+.card h3{
+    margin: 15px 0;
+ }
+ 
+ section{
+    background-color: whitesmoke;
+    margin: 0 10% 0 10%;
+ }
+ /* Happy section */
+ .Happy{
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 20px;
+    background: #e6d4d4;
+ }
+
+ .btm{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #6B3F2C;
+    padding: 12px 25px;
+    border-radius:10px 15px;
+ }
+.Happy{
+    display: flex;
+}
+ .happy{
+    margin-bottom: 40px;
+ }
+.happy1{
+    display: flex;
+    justify-content: space-around;
+}
+.visit{
+    margin-top: 40px;
+}
+.Order{
+    margin-top: 150px;
+    margin-left: -10%;
+}
+.order1{
+    text-decoration: none;
+    color: white; 
+    background-color:#6B3F2C;
+    padding: 12px 25px;
+    border-radius: 10px 15px;
+}
+
+.infoi{
+    background-color: #6B3F2C;
+}
+.icon{
+    font-size: 40px;
+}
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteration</title>
+</head>
+<body>
+    <h1>Iteration - Loop, repetition</h1>
+    <p>
+        A loop runs the same code over and over again,
+        as long as the condition is true.
+    </p>
+    <h2>For loop</h2>
+    <p>
+        A for loop is best to use when you know how many
+        times the code should run.
+        <br>
+        To count, a for loop uses a counting variable,
+        to keep track of how many times the loop has run.
+        <br>
+        Three parts of a for loop:
+        <ul>
+            <li>Initialization - Starting value</li>
+            <li>Condition - for loop runs as loog as 
+                the condition is true</li>
+            <li>Increment - Increase the counting variable</li>
+        </ul>
+    </p>
+    <script>
+        for(let i=1; i<=10; i++){
+            document.write(i+"<br/>");
+        }
+        for(let i=1; i<10; i++){
+            document.write("Morning<br/>");
+        }
+
+        let sum=0;
+        for(let i=1;i<=10;i++){
+            sum=sum+i;
+        }
+        document.write("The average value is")
+        document.write(sum/10 );
+    </script>
+    <hr>
+
+
+    <h2>While loop</h2>
+    <p>
+        The while loop loops throught a block of code 
+        as long as a specified condition is true.
+    </p>
+    <script>
+        // while loop 
+        /*while(condition){
+        
+        }*/
+
+        let j=1; 
+        while(j<=5){
+            document.write("While loop<br/>");
+            j++;
+        }
+         
+        let i=1 ;
+        let  total=0
+        while(i<=10){
+            total=total+i;
+            i++;
+        }
+        document.write("total ="+total)
+
+    </script>
+    <hr>
+
+    <h2>Do While loop</h2>
+    <p>
+        The do/while loop executes code once, then
+        repeats while the condition is true,and always runs at least once,
+        even if the condition is false.
+    </p>
+    <script>
+        //do while loop
+        let k=1;
+        do{
+            document.write("do while loop<br/>")
+            k++;
+        }
+        while(k<=5);
+    </script>
+    
+</body>
+</html>

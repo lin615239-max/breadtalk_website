@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use onMouseOver and onmouseOut to change an image.</h1>
+
+    <img src="image/drink3.jpg" alt="drink  " id="images" onmouseover="mouseOver()" onmouseout="mouseOut()">
+
+    <h2>Make a button glow when the mouse moves over it,</h2>
+    <button id="btn" onmouseover="glow()" onmouseout="unglow()">Over me</button>
+
+    <h2>Combine with CSS transition for smooth color effect.</h2>
+    <div id="box" onmouseover="move()" onmouseout="mover()"></div>
+
+    <script>
+        const img = document.getElementById('images');
+        function mouseOver(){
+            img.src="image/drink2.jpg";
+        }
+        function mouseOut(){
+            img.src="image/drink3.jpg";
+        }
+
+
+        const button= document.getElementById('btn');
+        function glow(){
+            button.style.boxShadow = "0 0 20px yellow"
+        }
+        function unglow(){
+            button.style.boxShadow= "none";
+        }
+
+        const box = document.getElementById('box');
+        function move(){
+            box.style.transition ="background-color 0.5s ease";
+            box.style.backgroundColor = "lightcoral";
+        }
+
+        function mover(){
+            box.style.transition = "background-color 0.5s ease";
+            box.style.backgroundColor = "lightblue";
+        }
+    </script>
+    
+</body>
+</html>

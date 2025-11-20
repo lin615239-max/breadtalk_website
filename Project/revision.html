@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello,ClickMeToChange</p>
+    <button onclick="clickme()">Change</button>
+      <br><br>
+    <input type="text" id="demo2" placeholder="Enter Your Name">
+    <br><br>
+    <button onclick="getinput()">Submit</button>
+
+
+     <p id="output"></p>
+
+
+     <h2>Change the text color</h2>
+     <p id="demo3">This is sample text.</p>
+     <label for="colorSelect">Choose a color</label>
+     <select id="colorSelect" onchange="changeColor()">
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+     </select>
+
+     <button onclick="removeColor()">Select and remove</button>
+     <br>
+
+     <h2>Show your name using onchange event.</h2>
+     <label for="username">Enter your name</label>
+     <input type="text" id="username" onchange="showname()">
+     <p id="demo4"></p>
+
+     <hr>
+
+     <h2>Mouse Event</h2>
+     <p id="demo5" onmouseover="mouseOver()" onmouseout="mouseOut()">move your mouse over</p>
+
+     
+    
+    <script>
+        function clickme(){
+            document.getElementById("demo").style.backgroundColor="whitesmoke";
+        }
+
+        function getinput(){
+            let name=document.getElementById("demo2").value;
+            document.getElementById("output").innerHTML="User name is "+name;
+        }
+
+        function changeColor(){
+            let color=document.getElementById("colorSelect").value;
+            document.getElementById("demo3").style.color=color; 
+        }
+
+        function removeColor(){
+            let x =document.getElementById("colorSelect");
+            x.remove(x.selectedIndex) 
+        }
+
+        function showname(){
+            let name=document.getElementById("username").value;
+            document.getElementById("demo4").innerText="Hello "+name+"!";
+        }
+
+        function mouseOver(){
+            document.getElementById("demo5").style.backgroundColor="green";
+            document.getElementById("demo5").innerText="Mouse is over the text"
+        }
+        function mouseOut(){
+            document.getElementById("demo5").style.backgroundColor="red";
+            document.getElementById("demo5").innerText="Mouse has left the text"
+        }
+         
+        
+    </script>
+    
+</body>  
+</html>
